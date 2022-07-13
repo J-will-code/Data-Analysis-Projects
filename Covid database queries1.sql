@@ -22,14 +22,14 @@ ORDER BY 1,2
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as Death_Infection_Rate
 FROM COVID_19_database..COVID_Deaths
 WHERE continent is not null
-WHERE location like '%Jamaica%'
+AND location like '%Jamaica%'
 ORDER BY 1,2
 
 ----Total Cases vs Population for Jamaica
 SELECT location, date, total_cases, population, (total_cases/population)*100 as Infection_rate 
 FROM COVID_19_database..COVID_Deaths
 WHERE continent is not null
-WHERE location like 'Jamaica'
+AND location like 'Jamaica'
 ORDER BY 1,2
 
 --Countries with the highest infection rate compared to the population 
