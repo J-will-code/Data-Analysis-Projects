@@ -1,5 +1,5 @@
 
--- Queries I originally had, but excluded some because it created too long of video
+-- Queries I originally had, but some were excluded
 -- Here only in case you want to check them out
 
 
@@ -33,7 +33,7 @@ order by 1,2
 
 
 --Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
---From PortfolioProject..CovidDeaths
+--From COVID_19_Database..COVID_Deaths
 ----Where location like '%states%'
 --where location = 'World'
 ----Group By date
@@ -68,7 +68,7 @@ order by PercentPopulationInfected desc
 -- 5.
 
 --Select Location, date, total_cases,total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
---From PortfolioProject..CovidDeaths
+--From COVID_19_Database..COVID_Deaths
 ----Where location like '%states%'
 --where continent is not null 
 --order by 1,2
